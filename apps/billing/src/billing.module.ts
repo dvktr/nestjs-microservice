@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common';
 import { BillingController } from './billing.controller';
 import * as Joi from 'joi';
 import { BillingService } from './billing.service';
-import { RmqModule } from '@app/common';
+import { AuthModule, RmqModule } from '@app/common';
 
 @Module({
   imports: [
@@ -15,6 +15,7 @@ import { RmqModule } from '@app/common';
       }),
     }),
     RmqModule,
+    AuthModule,
   ],
   controllers: [BillingController],
   providers: [BillingService],
