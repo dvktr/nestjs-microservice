@@ -4,8 +4,8 @@ This project is a microservice architecture built with NestJS, designed to study
 ## Language
 
 <!--ts-->
-  * [[en-US]](#[en-US])
-  * [[pt-BR]](#[pt-BR])
+  * [[en-US]](#Overview)
+  * [[pt-BR]](#Visão-Geral)
 <!--te-->
 
 ## Collection Postman
