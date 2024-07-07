@@ -1,73 +1,104 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# NestJS Microservice Project
+This project is a microservice architecture built with NestJS, designed to study and implement RabbitMQ for message queuing. The project is structured into separate services, each handling different aspects of the application. The services include authentication, billing, and order processing.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Language
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<!--ts-->
+  * [[en-US]](#[en-US])
+  * [[pt-BR]](#[pt-BR])
+<!--te-->
 
-## Description
+## Collection Postman
+[NestJs Microservices.postman_collection.json](https://github.com/user-attachments/files/16120993/NestJs.Microservices.postman_collection.json)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+------------------------
+### [en-US]
+## Overview
 
-## Installation
+This project is a microservice architecture built with NestJS, designed to study and implement RabbitMQ for message queuing. The project is structured into separate services, each handling different aspects of the application. The services include authentication, billing, and order processing.
 
-```bash
-$ npm install
-```
+## Technologies Used
 
-## Running the app
+- **NestJS**
+- **RabbitMQ**
+- **MongoDB**
+- **Docker**
+- **TypeScript**
+  
+### Applications
 
-```bash
-# development
-$ npm run start
+- **Auth**: Handles user authentication and authorization.
+- **Billing**: Manages billing-related operations.
+- **Orders**: Processes and manages orders.
 
-# watch mode
-$ npm run start:dev
+## Getting Started
 
-# production mode
-$ npm run start:prod
-```
+### Prerequisites
 
-## Test
+- Docker
+- Node.js
+- npm
 
-```bash
-# unit tests
-$ npm run test
+### Installation
 
-# e2e tests
-$ npm run test:e2e
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/nestjs-microservice.git
+   cd nestjs-microservice
+2. Install dependencies:
+   ```bash
+   npm install
 
-# test coverage
-$ npm run test:cov
-```
+### Running the Services
+1. Start the services using Docker Compose:
+   ```bash
+   docker-compose up --build
+2. The services will be available on the following ports:
+   - Auth: http://localhost:3001
+   - Orders: http://localhost:3000
 
-## Support
+---------------------
+### [pt-BR]
+## Visão Geral
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Este projeto é uma arquitetura de microsserviços construída com o NestJS, concebida para estudar e implementar o RabbitMQ para enfileiramento de mensagens. O projeto está estruturado em serviços separados, cada um tratando de diferentes aspectos da aplicação. Os serviços incluem autenticação, faturação e processamento de encomendas.
 
-## Stay in touch
+## Tecnologias Utilizadas
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- **NestJS**
+- **RabbitMQ**
+- **MongoDB**
+- **Docker**
+- **TypeScript**
+  
+### Aplicações
 
-## License
+- **Auth**: Trata da autenticação e autorização do utilizador.
+- **Billing**: Gerir as operações relacionadas com a faturação.
+- **Orders**: Processa e gere encomendas.
 
-Nest is [MIT licensed](LICENSE).
+## Começando
+
+### Pré-requisitos
+
+- Docker
+- Node.js
+- npm
+
+### Instalação
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/your-repo/nestjs-microservice.git
+   cd nestjs-microservice
+2. Instale as dependências:
+   ```bash
+   npm install
+
+### Rode os serviços
+1. Rode os serviços usando Docker Compose:
+   ```bash
+   docker-compose up --build
+2. Os serviços estarão disponíveis nessas portas:
+   - Auth: http://localhost:3001
+   - Orders: http://localhost:3000
